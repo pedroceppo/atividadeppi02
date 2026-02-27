@@ -8,6 +8,10 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+  res.send('Servidor funcionando 🚀 Acesse /Cadastro');
+});
+
 app.get('/Cadastro', (req, res) => {
     res.send(`
     <!DOCTYPE html>
